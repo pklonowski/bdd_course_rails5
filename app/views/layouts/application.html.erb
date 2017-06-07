@@ -9,12 +9,6 @@
   </head>
 
   <body>
-    <% flash.each do |key, message| %>
-      <div class="test-center alert alert-<%= key == 'notice'? 'success' : 'danger' %>">
-        <%= message %>
-      </div>
-    <% end %>
-    
     <header role="banner">
       <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid"> 
