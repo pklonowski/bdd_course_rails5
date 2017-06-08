@@ -24,6 +24,8 @@ class ArticlesController < ApplicationController
   
   def show
     set_article
+    @comment = @article.comments.build
+    @comments = @article.comments
   end
   
   def edit
